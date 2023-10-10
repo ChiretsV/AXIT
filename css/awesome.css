@@ -1,0 +1,41 @@
+.awesome{
+    width: 100%;
+    padding-bottom: 58px;
+}
+
+.awesome-wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.awesome-article-wrapper{
+    background-color: white;
+}
+
+.awesome-article{
+    display: inline-block;
+    width: 369px;
+    margin-right: 27px;
+    text-align: center;
+}
+
+.awesome-article:last-child{
+    margin-right: 0;
+}
+
+.awesome-article__title {
+    font-family: Open Sans;
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 8px;
+}
+
+.awesome-article__text {
+    font-family: Raleway;
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+}
