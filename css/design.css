@@ -1,0 +1,47 @@
+.design{
+    width: 100%;
+    background-image: url(/images/design.png);
+}
+
+.design-wrapper{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.design-wrapper .section__title{
+    color: #FFF;
+}
+
+.design-wrapper .section-separator{
+    border: .5px solid #FFF;
+}
+
+.design-wrapper .section__subheading{
+    color: #FFF;
+    margin-bottom: 73px;
+}
+
+.design__button{
+    width: 370px;
+    height: 58px;    
+    line-height: 58px;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    margin: 0 auto;
+}
+
+.design__button:focus, .design__button:hover{
+    opacity: .75;
+    cursor: pointer;
+}
+
