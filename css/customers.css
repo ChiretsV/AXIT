@@ -17,7 +17,7 @@
 .customers-article{
     display: flex;
     flex-direction: column;
-    width: 317px;
+    width: 370px;
 }
 
 .customers-article__comment{
