@@ -12,15 +12,14 @@
     background-color: white;
 }
 
-.awesome-article{
-    display: inline-block;
-    width: 369px;
-    margin-right: 27px;
-    text-align: center;
+.awesome-article-wrapper{
+    display: flex;
+    justify-content: space-between;
 }
 
-.awesome-article:last-child{
-    margin-right: 0;
+.awesome-article{
+    width: 369px;
+    text-align: center;
 }
 
 .awesome-article__title {
