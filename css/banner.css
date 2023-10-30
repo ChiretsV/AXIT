@@ -1,0 +1,135 @@
+.banner{
+    width: 100%;
+    height: 1026px;
+    background-image: url(/images/banner.png);
+}
+
+.banner-blackout{
+    width: 100%;
+    height: 1026px;
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.banner-wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 207px 0 185px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner-logo{
+    display: flex;
+    width: 270px;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+
+.banner-text-wrapper .section__title, .banner-text-wrapper .section-separator, .banner-text-wrapper .section__subheading{
+    text-align: left;
+    color: #FFF;
+}
+
+.banner-text-wrapper .section-separator{
+    margin: 0;
+    border-color: #FFF;
+    margin-bottom: 42px;
+}
+
+.banner-text-wrapper .section__title{
+    height: 168px;
+    line-height: 56px;
+    margin-bottom: 55px;
+    width: 670px;
+    font-size: 48px;
+}
+
+.banner-text-wrapper .section__subheading{
+    margin-bottom: 92px;
+}
+
+.banner-form{
+    width: 470px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.banner-form__title{
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+    height: 90px;
+    line-height: 90px;
+    margin-bottom: 45px;
+}
+
+.banner-form__title-span{
+    color: #EC7979;
+}
+
+.banner-form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    margin-bottom: 75px;
+}
+
+.banner-form-inputs-item{
+    outline: none;
+    width: 370px;
+    height: 38px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    font-size: 18px;
+}
+
+.banner-form-inputs-item::placeholder{
+    color: #BDBDBD;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.banner-form__button{
+    width: 471px;
+    height: 60px;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    background: #EC7979;
+}
+
+.banner-form__button:focus, .banner-form__button:hover{
+    opacity: .75;
+}
+
+.bunner__button{
+    width: 370px;
+    height: 58px;    
+    line-height: 58px;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 2px solid #FFF;
+}
+
+.bunner__button:focus, .bunner__button:hover{
+    opacity: .75;
+    cursor: pointer;
+}
