@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AXIT</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.scss">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet"> 
 </head>
 <body>
@@ -28,6 +28,7 @@
                     <a href="#Contact" class="header-nav-item__link">Contact</a>
                 </li>
             </ul>
+            <div class="header-burger"></div>
         </div>
     </header>
     <main class="main">
@@ -39,9 +40,10 @@
                             <img src="images/logo-AX.svg" alt="AX" class="banner-logo-part">
                             <img src="images/logo-IT.svg" alt="IT" class="banner-logo-part">
                         </div>
-                        <h2 class="section__title">MODERN AXURE TEMPLATE <br>FOR BEAUTIFUL<br> PROTOTYPES</h2>
+                        <h2 class="section__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
                         <div class="section-separator"></div>
                         <h5 class="section__subheading">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</h5>
+                        <button class="bunner__button">Download</button>
                     </div>
                     <form class="banner-form">
                         <h4 class="banner-form__title">Try Your <span class="banner-form__title-span"> FREE </span>Trial Today</h4>
@@ -52,7 +54,6 @@
                         </div>
                         <button type="submit" class="banner-form__button">Get Started</button>
                     </form>
-                    <button class="bunner__button">Download</button>
                 </div>
             </div>
         </section>
@@ -102,6 +103,7 @@
             <div class="awesome-wrapper">
                 <h2 class="section__title">WHY THIS IS AWESOME</h2>
                 <div class="section-separator"></div>
+                <div class="section-separator1"></div>
                 <h5 class="section__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                 <section class="awesome-article-wrapper">
                     <article class="awesome-article">
@@ -219,6 +221,7 @@
                         </div>
                     </article>
                 </div>
+                <img src="images/dots.svg" alt="" class="customers-article-wrapper-dots">
             </div>
         </section>
         <section class="design">
@@ -235,12 +238,14 @@
                 <div class="section-separator"></div>
                 <h5 class="section__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                 <form class="contact-form">
-                    <div class="contact-form-inputs">
-                        <input type="text" class="contact-form-inputs-item" placeholder="Name">
-                        <input type="email" class="contact-form-inputs-item" placeholder="Email">
-                        <input type="password" class="contact-form-inputs-item" placeholder="Password">
+                    <div class="contact-form-content">
+                        <div class="contact-form-content-inputs">
+                            <input type="text" class="contact-form-content-inputs-item" placeholder="Name">
+                            <input type="email" class="contact-form-content-inputs-item" placeholder="Email">
+                            <input type="password" class="contact-form-content-inputs-item" placeholder="Password">
+                        </div>
+                        <textarea class="contact-form-content-message" placeholder="Message"></textarea>
                     </div>
-                    <textarea class="contact-form-message" placeholder="Message"></textarea>
                     <button class="contact-form__button">Send Message</button>
                 </form>
             </div>

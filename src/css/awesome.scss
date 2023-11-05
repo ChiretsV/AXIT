@@ -1,10 +1,12 @@
+@import 'mixins';
+
 .awesome{
     width: 100%;
     padding-bottom: 58px;
 }
 
 .awesome-wrapper{
-    width: 1170px;
+    @include adaptiv-width(1170, 288);
     margin: 0 auto;
 }
 
@@ -15,10 +17,12 @@
 .awesome-article-wrapper{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .awesome-article{
-    width: 369px;
+    // width: 369px;
+    @include adaptiv-width(368, 288);
     text-align: center;
 }
 
@@ -26,7 +30,8 @@
     font-family: Open Sans;
     font-weight: 700;
     text-align: center;
-    font-size: 24px;
+    // font-size: 24px;
+    @include adaptiv-font(24, 18);
     height: 100px;
     line-height: 100px;
     margin-bottom: 8px;
@@ -36,5 +41,12 @@
     font-family: Raleway;
     font-weight: 400;
     text-align: center;
-    font-size: 18px;
+    // font-size: 18px;
+    @include adaptiv-font(18, 14);
+}
+
+@media (max-width: 700px) {
+    .awesome-article-wrapper{
+        justify-content: center;
+    }
 }

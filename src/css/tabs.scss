@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .tabs{
     width: 100%;
     padding-top: 100px;
@@ -5,7 +7,8 @@
 }
 
 .tabs-wrapper{
-    width: 1170px;
+    // width: 1170px;
+    @include adaptiv-width(1170, 288);
     margin: 0 auto;
 }
 
@@ -17,7 +20,8 @@
 .tabs-switchers__switcher{
     height: 40px;
     line-height: 40px;
-    width: 184px;
+    // width: 184px;
+    @include adaptiv-width(184, 102);
     vertical-align: middle;
     text-align: center;
     border-bottom: 1px solid #C6CBCD; 
@@ -38,7 +42,8 @@
 }
 
 .tabs-switchers__switcher-stub{
-    width: 619px;
+    // width: 619px;
+    @include adaptiv-width(619, 0);
     height: 40px;
     border-bottom: 1px solid #C6CBCD;
 }
@@ -50,15 +55,21 @@
 }
 
 .tabs-content-article{
-    width: 700px;
+    // width: 700px;
+    @include adaptiv-width(700, 288);
     padding: 0px 30px 54px 100px;
 }
 
 .tabs-content-article__title{
-    height: 124px;
-    line-height: 124px;
+    // height: 124px;
+    @include adaptiv-height(124, 112);
+    // line-height: 124px;
+    // @include adaptiv-line-height(124, 62);
+    display: flex;
+    align-items: center;
     font-family: Open Sans;
-    font-size: 30px;
+    // font-size: 30px;
+    @include adaptiv-font(30, 18);
     font-weight: 700;
     margin-bottom: 27px;
 }
@@ -68,12 +79,14 @@
     margin-bottom: 27px;
     font-family: Raleway;
     font-weight: 400;
-    font-size: 18px;
+    // font-size: 18px;
+    @include adaptiv-font(18, 13);
 }
 
 .tabs-content-article__button{
     color: #FFF;
-    width: 270px;
+    // width: 270px;
+    @include adaptiv-width(270, 242);
     height: 58px;
     text-align: center;
     font-family: Open Sans;
@@ -87,4 +100,36 @@
 .tabs-content-article__button:focus, .tabs-content-article__button:active, .tabs-content-article__button:hover{
     cursor: pointer;
     opacity: 0.75;
+}
+
+.tabs-content-article-picture{
+    @include adaptiv-width(500, 385);
+}
+
+@media (max-width: 900px) {
+    .tabs-content-article-picture{
+        display: none;
+    }
+
+    .tabs-content{
+        justify-content: center;
+    }
+
+
+    .tabs-content-article__title, .tabs-content-article__text{
+        text-align: center;
+    }
+
+    .tabs-content-article{
+        padding: 0 20px 0 25px;
+    }
+
+    .tabs-content-article__button{
+        margin-bottom: 30px;
+    }
+
+    .tabs{
+        padding-top: 41px;
+        padding-bottom: 0;
+    }
 }

@@ -1,12 +1,16 @@
+@import 'mixins';
+
 .social-media{
     width: 100%;
     background-color: #F8EFEF;
 }
 
 .social-media-wrapper{
-    width: 1170px;
+    // width: 1170px;
+    @include adaptiv-width(1170, 288);
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -20,7 +24,8 @@
     line-height: 60px;
     color: #333;
     font-family: Open Sans;
-    font-size: 24px;
+    // font-size: 24px;
+    @include adaptiv-font(24, 18);
     font-weight: 700;
     text-transform: capitalize;
     margin-bottom: 18px;
@@ -29,7 +34,8 @@
 .social-media-content__subheading{
     color: #86878B;
     font-family: Raleway;
-    font-size: 18px;
+    // font-size: 18px;
+    @include adaptiv-font(18, 14);
     font-weight: 400;
 }
 
@@ -45,8 +51,23 @@
 }
 
 .social-media-links-link-logo{
-    width: 70px;
+    // width: 70px;
+    @include adaptiv-width(70, 26);
     height: 70px;
 }
 
+@media (max-width: 700px) {
 
+    .social-media-links{
+        gap: 17px;
+        margin: 0;
+    }
+
+    .social-media-content{
+        text-align: center;
+    }
+
+    .social-media-wrapper{
+        gap: 0;
+    }
+}

@@ -1,0 +1,105 @@
+@import 'mixins';
+
+.contact{
+    width: 100%;
+}
+
+.contact-wrapper{
+    // width: 1170px;
+    @include adaptiv-width(1170, 288);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.contact-wrapper .section__subheading{
+    margin-bottom: 89px;
+}
+
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contact-form-content{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.contact-form-content-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-form-content-inputs-item{
+    outline: none;
+    // width: 571px;
+    @include adaptiv-width(500, 288);
+    height: 38px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    font-size: 18px;
+}
+
+.contact-form-content-inputs-item::placeholder, .contact-form-content-message::placeholder{
+    color: #BDBDBD;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact-form-content-message{
+    // width: 569px;
+    @include adaptiv-width(500, 288);
+    height: 214px;
+    resize: none;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.contact-form__button{
+    color: #FFF;
+    // width: 370px;
+    @include adaptiv-width(370, 288);
+    // height: 58px;
+    @include adaptiv-height(58, 50);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: #EC7979;
+    border: none;
+    margin: 0 auto;
+}
+
+.contact-form__button:focus, .contact-form__button:active, .contact-form__button:hover{
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+@media (max-width: 700px) {
+    .contact-form{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-wrapper{
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-form-content{
+        align-items: center;
+        justify-content: center;
+    }
+}

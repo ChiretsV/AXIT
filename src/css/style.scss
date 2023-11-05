@@ -1,0 +1,53 @@
+@import url("./awesome.scss");
+@import url("./tabs.scss");
+@import url("./pricing.scss");
+@import url("./customers.scss");
+@import url("./header.scss");
+@import url("./social-media.scss");
+@import url("./footer.scss");
+@import url("./design.scss");
+@import url("./banner.scss");
+@import url("./contact.scss");
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+main {
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-separator {
+    @include adaptiv-width(142, 134); //170px
+    border: .5px solid #EC7979;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.section__subheading {
+    font-family: Raleway;
+    font-weight: 400;
+    text-align: center;
+    @include adaptiv-font(18, 13);
+    color: #86878B;
+    margin-bottom: 32px;
+}
+
+.section__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Raleway;
+    @include adaptiv-font(36, 24);
+    font-weight: 400;
+    text-align: center;
+    // height: 150px;
+    @include adaptiv-height(150, 120);
+    // line-height: 150px;
+    // @include adaptiv-line-height(150, 20);
+    text-transform: uppercase;
+}

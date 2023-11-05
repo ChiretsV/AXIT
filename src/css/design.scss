@@ -1,6 +1,8 @@
+@import 'mixins';
+
 .design{
     width: 100%;
-    background-image: url(/images/design.png);
+    background-image: url(/src/images/design.png);
 }
 
 .design-wrapper{
@@ -26,9 +28,14 @@
 }
 
 .design__button{
-    width: 370px;
-    height: 58px;    
-    line-height: 58px;
+    // width: 370px;
+    @include adaptiv-width(370, 288);
+    // height: 58px;
+    @include adaptiv-height(58, 50);    
+    // line-height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #FFF;
     text-align: center;
     font-family: Open Sans;

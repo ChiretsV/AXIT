@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .footer{
     width: 100%;
     background-color: #000;
@@ -7,13 +9,15 @@
 }
 
 .footer-wrapper{
-    width: 1170px;
+    // width: 1170px;
+    @include adaptiv-width(1170, 288);
     margin: 0 auto;
 }
 
 .footer-links{
     display: flex;
-    gap: 30px;
+    // gap: 30px;
+    @include adaptiv-gap(30, 17);
     margin-bottom: 27px;
     justify-content: center;
 }
@@ -24,14 +28,17 @@
 }
 
 .footer-links-link-logo{
-    width: 53.2px;
-    height: 53.2px;
+    // width: 53.2px;
+    @include adaptiv-width(53.2, 26);
+    // height: 53.2px;
+    @include adaptiv-height(53.2, 26);
 }
 
 .footer__subheading{
     color: rgba(255, 255, 255, 0.50);
     text-align: center;
     font-family: Raleway;
-    font-size: 18px;
+    // font-size: 18px;
+    @include adaptiv-font(18, 14);
     font-weight: 400;
 }
