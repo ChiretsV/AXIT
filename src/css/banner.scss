@@ -15,9 +15,10 @@
 
 .banner-wrapper{
     // width: 1170px;
-    @include adaptiv-width(1170, 288);
+    // @include adaptiv-width(1170, 288);
+    width: 95%;
     margin: 0 auto;
-    padding: 207px 50px 185px 0;
+    padding: 207px 0 185px 0;
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -57,14 +58,14 @@
     line-height: 56px;
     margin-bottom: 55px;
     // width: 670px;
-    @include adaptiv-width(670, 288);
+    @include adaptiv-width(600, 288);
     // font-size: 48px;
     @include adaptiv-font(48, 36);
 }
 
-.banner-text-wrapper .section__subheading{
-    @include adaptiv-width(670, 288);
-}
+// .banner-text-wrapper .section__subheading{
+//     @include adaptiv-width(570, 288);
+// }
 
 .banner-text-wrapper .section__subheading{
     margin-bottom: 92px;
